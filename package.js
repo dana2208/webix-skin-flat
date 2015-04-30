@@ -1,7 +1,7 @@
 // Package metadata file for Meteor.js. Maintainer: @dandv.
 'use strict';
 
-var packageName = 'webix:skin-webix';  // https://atmospherejs.com/webix/skin-webix
+var packageName = 'webix:skin-flat';  // https://atmospherejs.com/webix/skin-flat
 var gitHubPath = 'webix-hub/tracker';  // https://github.com/webix-hub/tracker - unfortunate name choice for the main Webix repo
 var where = 'client';  // where to install: 'client' or 'server'. For both, pass nothing.
 
@@ -51,14 +51,14 @@ Package.describe({
   name: packageName,
   summary: 'Default skin for Webix UI',
   version: version,
-  git: 'https://github.com/MeteorPackaging/webix-skin-webix',
+  git: 'https://github.com/MeteorPackaging/webix-skin-flat',
   documentation: 'README.md'
 });
 
 Package.onUse(function (api) {
   api.imply('webix:webix@2.3.8');
   
-  api.addFiles(['webix/codebase/webix.css'], 'client');
+  api.addFiles(['webix/codebase/skins/debug/flat.css'], 'client');
 
   // add the Webix font files
   ['PTS-webfont', 'PTS-bold'].forEach(function (font) {
