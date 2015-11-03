@@ -62,7 +62,7 @@ Package.onUse(function (api) {
 
   // add the Webix font files
   ['PTS-webfont', 'PTS-bold'].forEach(function (font) {
-    api.addFiles([
+    api.addAssets([
       // we bundle all font files, but the client will request only one of them via the CSS @font-face rule
       'webix/codebase/fonts/' + font + '.eot',  // IE8 or older only understands EOT. IE9+ will read it too because it loads the first occurrence of `src`
       'webix/codebase/fonts/' + font + '.ttf',  // Android Browsers 4.1, 4.3 - http://caniuse.com/#feat=ttf
