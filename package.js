@@ -56,7 +56,7 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.imply('webix:webix@2.3.8');
+  api.imply('webix:webix@3.0.8');
   
   api.addFiles(['webix/codebase/skins/debug/flat.css'], 'client');
 
